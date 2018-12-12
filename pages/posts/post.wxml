@@ -1,0 +1,30 @@
+<!-- 引用公共模板 -->
+<import src="post-item/post-item-template.wxml"/>
+<!-- 轮播图 -->
+<view>
+  <swiper catchtap='onSwiperTap' indicator-dots='true' autoplay='true' interval='5000'>
+    <swiper-item>
+      <image src='/images/post/xiaolong.jpg' data-postId='0'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/post/vr.png' data-postId='1'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/post/bl.png' data-postId='2'></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 详情列表 -->
+ <block wx:for="{{posts_key}}" wx:for-item="item" wx:key="id"> 
+  <!-- 使用公共模板template -->
+  <!-- 使用data将数据item传输到模板上 -->
+  <!-- 使用三个小点...展开对象数据 -->
+  <!-- 在微信中凡是以“data-”定义的属性都称为自定义属性 -->
+  <!-- 自定义属性“-”之后的首写字母才是大写 -->
+  <view catchtap="onPostTap" data-postId='{{item.postId}}'>
+    <template is="postItem" data="{{...item}}"/>
+  </view>
+ </block> 
+
+

@@ -1,0 +1,81 @@
+.container2{
+  display: flew;
+  flex-direction:column;
+}
+.head-image{
+  width: 750rpx;
+  height: 460rpx;
+}
+.author-date{
+  flex-direction: row;
+  margin-left: 10px;
+  margin-top:20rpx;
+}
+.avatar{
+  height: 64rpx;
+  width: 64rpx;
+  vertical-align: middle;
+}
+.author{
+  font-size:30rpx;
+  font-weight: 300;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  color: #666;
+}
+.const-text{
+  font-size: 24rpx;
+  color: #999;
+  margin-left:20rpx;
+}
+.date{
+  font-size:24rpx;
+  margin-left:30rpx;
+  vertical-align:midde;
+  color:#999;
+}
+.title{
+  margin-left:40rpx;
+  font-size:36rpx;
+  font-weight: 700;
+  margin-top:30rpx;
+  letter-spacing: 2px;
+  color:#4b556c;
+}
+.tool{
+  margin-top:20rpx;
+}
+.tool-circle{
+  text-align: right;
+  padding:0 7px;
+}
+.tool-circle image{
+  width:40px;
+  height:40px;
+}
+.share-img{
+  margin-left:30rpx;
+}
+.horizon{
+  width:660px;
+  height: 1px;
+  background-color:#e5e5e5;
+  position: relative;
+  vertical-align: middle;
+  top:-46rpx;
+  margin:0 auto;
+  z-index: -99;
+}
+.detail{
+  font-size: 26rpx;
+  padding: 30rpx;
+}
+.audio{
+  width:150rpx;
+  height: 150rpx;
+  position: absolute;
+  top:175rpx;
+  left: 302rpx;
+  margin-top: -50rpx;
+  opacity: 0.6;
+}

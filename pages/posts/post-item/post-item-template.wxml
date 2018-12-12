@@ -1,0 +1,18 @@
+<template name="postItem">
+<!-- 模板文件代码的调用 -->
+  <view class='vessel'>
+    <view class='author-view'>
+      <image class='author-view-img' src='{{imgSrc}}'></image>
+      <text class='author-view-text'>{{date}}</text>
+    </view>
+    <text class='title-text'>{{title}}</text>
+    <image class='content-img' src='{{avatar}}'></image>
+    <text class='content-text'>{{content}}</text>
+    <view>
+      <image class='collect-icon' src='{{read_icon}}'></image>
+      <text class='collect-text'>{{reading}}</text>
+      <image class='collect-icon' src='{{coll_icon}}'></image>
+      <text class='collect-text'>{{collection}}</text>
+    </view>
+  </view>
+</template>

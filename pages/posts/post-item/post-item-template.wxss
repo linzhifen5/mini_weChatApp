@@ -1,0 +1,48 @@
+/* 设置循环列表样式 */
+.vessel{
+  display: flex;
+  flex-direction: column;
+  margin-top:20px;
+  background-color: white;
+  padding:20px 0;
+}
+.author-view{
+  margin: 20rpx 0 20rpx 10rpx;
+}
+.author-view-img{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align:middle;
+}
+.author-view-text{
+  margin-left: 20px;
+  vertical-align:middle;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.content-img{
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 10px;
+}
+.content-text{
+  font-size: 14px;
+  margin: 10px;
+  letter-spacing:3rpx;
+}
+.collect-icon{
+  vertical-align: middle;
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20px;
+}
+.collect-text{
+  font-size: 13px;
+  vertical-align:midde;
+  margin-left: 10px;
+}
+.title-text{
+  font-size: 16px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}

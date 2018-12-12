@@ -1,0 +1,25 @@
+<!-- 文章详情页面 -->
+<view class="container2">
+  <image class="head-image" src="{{isPlayingMusic?postData.music.coverImg:postData.headImgSrc}}"></image>
+  <!-- 音乐图标 -->
+  <image class="audio" catchtap="onMusicTap" src="{{isPlayingMusic?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>  
+  <view class="author-date">
+    <image class="avatar" src="{{postData.imgSrc}}"></image>
+    <text class="author">{{postData.author}}</text>
+    <text class="const-text">{{postData.dateTime}}</text>
+  </view>
+  <text class="title">{{postData.title}}</text>
+  <view class="tool">
+    <view class="tool-circle">
+      <!-- 判断文章是否收藏 -->
+      <image wx:if="{{collected}}" catchtap="onCollectionTap" src="/images/icon/collection.png"></image>
+      <image wx:else="{{collected}}" catchtap="onCollectionTap" src="/images/icon/collection-anti.png"></image>
+      <!-- 分享 -->
+      <image catchtap="onShareTap" class="share-img" src="/images/icon/share.png"></image>
+    </view>
+    <view class="horizon"></view>
+    <view class="detail">
+      {{postData.content}}
+    </view>
+  </view>
+</view>

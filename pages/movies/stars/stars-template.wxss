@@ -1,0 +1,21 @@
+.stars-container{
+  /* 设置弹性盒子 */
+  display: flex;
+  /* 水平显示 */
+  flex-direction: row;
+}
+
+.stars{
+  display: flex;
+  /* 水平显示 */
+  flex-direction: row;
+  height: 17rpx;
+  margin-right: 24rpx;
+  margin-top:17rpx;
+}
+
+.stars image{
+  padding-left: 3rpx;
+  height: 17rpx;
+  width: 17rpx;
+}
